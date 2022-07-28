@@ -22,72 +22,74 @@ dp = Dispatcher(bot)
 
 
 @dp.message_handler(commands=['start'])
+
 async def send_welcome(message: types.Message):
-    print(message)
-    bot.delete_message()
+    
+    
     await message.answer(text="🇺🇿 Kerakli tilni tanlang ! \n 🇷🇺 Выберите язык !", reply_markup=language)
 
 
 @dp.callback_query_handler(text=['uz'])
 async def uzbekcha(call:CallbackQuery):
-    bot.delete_message()
+    await call.message.delete()
     await call.message.answer(parse_mode='HTML',text=f"Assalomu alaykum hurmatli <b>{call.message.chat.username}</b> ! \n <b>Qarshi muhandislik iqtisodiyot instituti</b> rasmiy botiga hush kelibsiz", reply_markup=uzHeader)
 
 
 @dp.callback_query_handler(text=['ru'])
 async def ruscha(call:CallbackQuery):
-    
+    await call.message.delete()
     await call.message.answer(parse_mode='HTML',text=f"Здраствуйте дорогие {call.message.chat.username} ! \n Добро пожаловать на официальный бот Каршинский Института инженерной экономики", reply_markup=ruHeader)
 
 
 @dp.callback_query_handler(text='bakalavr')
 async def bakalavr(call:CallbackQuery):
-    #reply - ayni bir habarga javob
+    await call.message.delete()
     await call.message.answer(text="📂 Kerakli bo'limni tanlang ! 👇", reply_markup=bakalavrUz)
     
     
 
 @dp.callback_query_handler(text='bakalavrRu')
 async def bakalavrRu(call:CallbackQuery):
-    #reply - ayni bir habarga javob
+    await call.message.delete()
     await call.message.answer(text="📂 Выберите нужный раздел! 👇", reply_markup=bakalavrRu)
     
     
 @dp.callback_query_handler(text='uzfak')
 async def uzfak(call:CallbackQuery):
-    #reply - ayni bir habarga javob
+    await call.message.delete()
     await call.message.answer(text="📂 Kerakli fakultetni tanlang ! 👇", reply_markup=UzFakultetUz)
     
     
 @dp.callback_query_handler(text='rufak')
 async def rusfak(call:CallbackQuery):
-    #reply - ayni bir habarga javob
+    await call.message.delete()
     await call.message.answer(text="📂 Выберите нужный фaкулътет! 👇", reply_markup=RuFakultetRu)
     
 
     
 @dp.callback_query_handler(text='til')
 async def til(call:CallbackQuery):
+    await call.message.delete()
     await call.message.answer(text="Kerakli tilni tanlang ! \n Выберите язык !", reply_markup=language)
     
     
     
 @dp.callback_query_handler(text=['<<UzFak'])
 async def uzbekcha(call:CallbackQuery):
-    
-    await call.message.answer(text=f"Assalomu alaykum hurmatli {call.message.chat.username} !", reply_markup=uzHeader)
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text=f"Assalomu alaykum hurmatli    <b>{call.message.chat.username}</b> !", reply_markup=uzHeader)
     
     
 @dp.callback_query_handler(text=['<<RuFak'])
 async def ruscha(call:CallbackQuery):
-    
+    await call.message.delete()
     await call.message.answer(text=f"Здраствуйте дорогие {call.message.chat.username} !", reply_markup=ruHeader)
     
     
     
 @dp.callback_query_handler(text='<<UzFakUz')
 async def bakalavr(call:CallbackQuery):
-    #reply - ayni bir habarga javob
+    await call.message.delete()
     await call.message.answer(text="📂 Kerakli bo'limni tanlang ! 👇", reply_markup=bakalavrUz)
     
     
@@ -96,7 +98,7 @@ async def bakalavr(call:CallbackQuery):
 @dp.callback_query_handler(text='<<RuFakRu')
 async def bakalavrRu(call:CallbackQuery):
     
-    #reply - ayni bir habarga javob
+    await call.message.delete()
     await call.message.answer(text="📂 Выберите нужный раздел! ! 👇", reply_markup=bakalavrRu)
     
     

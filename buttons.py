@@ -124,7 +124,7 @@ UzFakultetUz = InlineKeyboardMarkup(
         ],
         
         [
-            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFakUz"),
+            InlineKeyboardButton(text="<< Ortga",callback_data="bakalavr"),
             InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),
             
            
@@ -161,7 +161,7 @@ RuFakultetRu = InlineKeyboardMarkup(
         ],
         
         [
-            InlineKeyboardButton(text="<< Назад",callback_data="<<RuFakRu"),
+            InlineKeyboardButton(text="<< Назад",callback_data="<<iqtisod"),
             InlineKeyboardButton(text="⚙️ Изменить язык",callback_data="til"),
             
            
@@ -195,7 +195,7 @@ UzIqtisodUz = InlineKeyboardMarkup(
         
         
         [
-            InlineKeyboardButton(text="<< Ortga",callback_data="<<iqtisod"),
+            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
             InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),
             
            
