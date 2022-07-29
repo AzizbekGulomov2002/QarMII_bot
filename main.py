@@ -119,7 +119,7 @@ async def neft(call:CallbackQuery):
 @dp.callback_query_handler(text="DekanNeftUz")    
 async def DekanNeftUz(call:CallbackQuery):
     await call.message.delete()
-    await call.message.answer(text="📂 Neft va Gaz fakulteti Dekani: \n 🤵‍♂️Berdiev Abdimalik Hakimovich.\n 📞Bog'lanish: +998907297859 \n 📆Qabul kunlari: Dushanba-Shanba 9:00 – 17:00 \n \n ⚫️O'quv ishlari bo'yicha Dekan o'rinbosari: \n 🤵‍♂️Hasanov Shamshiddin Xafizovich. \n 📞 Bog'lanish :+998996671529 ! \n 📆Qabul kunlari: Dushanba-Juma kunlari (10:00-17:00) \n \n ⚫️Yoshlar bilan ishlash bo’yicha dekan o'rinbosari: \n 🤵‍♂️Mirzayev Komiljon Mamairjonovich. \n  📞Bog'lanish :+998909940787 \n 📆Qabul kunlari: Dushanba-Juma kunlari (10:00-17:00) \n \n  ☎️Kall markaz: +998752200924", reply_markup=UzNeftGazDekanat)
+    await call.message.answer(text="📂 Neft va Gaz fakulteti Dekani: \n 🤵‍♂️Raxmatov Erkin Аbdihafizovich.\n 📞Bog'lanish: +998999459812 \n 📆Qabul kunlari: Dushanba-Juma kunlari (15:00-17:00) \n \n ⚫️O'quv ishlari bo'yicha Dekan o'rinbosari: \n 🤵‍♂️Nurqulov Eldor Nurmuminovich. \n 📞 Bog'lanish : +998995300225 ! \n ⚫️O'quv ishlari bo'yicha Dekan o'rinbosari: \n 🤵‍♂️Abdirazakov Akmal Ibragimovich. \n 📞 Bog'lanish : +998907228015 ! \n 📆Qabul kunlari:  Dushanba-Juma kunlari (15:00-17:00) \n \n ⚫️Yoshlar bilan ishlash bo’yicha dekan o'rinbosari: \n 🤵‍♂️Sharipov G‘ulomjon Qarshi о‘g‘li. \n  📞Bog'lanish :+998905185333 \n 📆Qabul kunlari: Dushanba-Juma kunlari (10:00-17:00) \n \n  ☎️Kall markaz: +998752200924", reply_markup=UzNeftGazDekanat)
 
 
 
