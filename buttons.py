@@ -13,14 +13,14 @@ uzHeader = InlineKeyboardMarkup(
     inline_keyboard=[
         [
             InlineKeyboardButton(text="🎓 Bakalavr",callback_data="bakalavr"),
-            InlineKeyboardButton(text="💼 Magistr",callback_data="magistr"),
+            InlineKeyboardButton(text="💼 Magistr",callback_data="magistrUz"),
            
         ],
         
         [
             
-            InlineKeyboardButton(text="🏛 Universitet haqida",callback_data="haqida"),
-            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),
+            InlineKeyboardButton(text="🏛 Institut haqida",callback_data="haqida"),
+            InlineKeyboardButton(text="🔔 Yangiliklar",callback_data="yangiliklar"),
             
         ],
 
@@ -33,6 +33,57 @@ uzHeader = InlineKeyboardMarkup(
         
         
        
+    ]
+)
+#-------------------------------YANGILIKLAR IT KURSLAR -------------------------------------
+YangiliklarUz = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
+        ]
+        
+    ]
+)
+#-------------------------------STATISTIKA -------------------------------------
+StatistikaUz = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
+        ]
+        
+    ]
+)
+#-------------------------------UNIVERSITET HAQIDA-------------------------------------
+UniverHaqidaUz = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
+        ]
+        
+    ]
+)
+
+#-------------------------------REKTORAT BO'LIMI-------------------------------------
+RektoratUz = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+           InlineKeyboardButton(text="Rektoratga murojaat", callback_data="rektorQabulUz")
+           
+        ],
+        [
+            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
+        ]
+        
+    ]
+)
+
+#-------------------------------MAGISTRATURA-------------------------------------
+MagistrUz = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
+        ]
+        
     ]
 )
 
@@ -71,14 +122,138 @@ bakalavrUz = InlineKeyboardMarkup(
         [      
             InlineKeyboardButton(text="🇧🇾 Belarus fakultetlari",callback_data="belfak"),   
         ],
+
+        [      
+            InlineKeyboardButton(text="⛪️ Kafedralar",callback_data="kafedraUz"),   
+        ],
         
         [
             InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
-            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),
+            
             
            
         ],
        
+    ]
+)
+
+
+#-------------------------------KAFEDRALAR RO'YXATI-------------------------------------
+KafedraUz = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="1) Axborot texnologiyalari kafedrasi",callback_data="axborotKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="2) Neft va Gaz ishi kafedrasi",callback_data="neftGazKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="3)Texnologik mashina va jihozlash kafedra",callback_data="texnoJihozKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="4) Gidravlika va gidro inshootlar kafedrasi",callback_data="gidroInshootKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="5) Transport vositalari kafedrasi",callback_data="transportKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="6) Umumtexnika fanlar kafedrasi",callback_data="umumtexnikaKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="7) Foydali qazilmalar geologiyasi va razvetkasi",callback_data="foydaliKonKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="8) Konchilik ishi kafedrasi",callback_data="konchilikKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="9) Ekologiya va mehnat muhofazasi",callback_data="ekologiyaKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="10) Kimyoviy texnologiyalar kafedrasi",callback_data="kimyoTexKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="11) Qishloq xo'jaligi mahsulotlarini saqlash",callback_data="qishloqSaqlashKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="12) Issiqlik energetikasi kafedrasi",callback_data="issiqlikKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="13) Elektr energetikasi kafedrasi",callback_data="issiqlikKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="14) Fizika va elektronika",callback_data="fizikaElektrKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="15) Innovatsion iqtisodiyot kafedrasi",callback_data="innoIqtisodKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="16) Buxgalteriya hisobi va audit",callback_data="buxAuditKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="17) Biznes va innovatsion menejment",callback_data="biznesKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="18) O'zbekiston tarixi kafedrasi",callback_data="uzTarixKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="19) Ijtimoiy fanlar kafedrasi",callback_data="ijtimoiyKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="20) O'zbek va rus tillari kafedrasi",callback_data="uzbRusKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="21) Xorijiy tillar kafedrasi",callback_data="xorijiyKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="22) Jismoniy tillar kafedrasi",callback_data="jismoniyKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="23) Muqobil energiya manbaalari kafedrasi",callback_data="muqobilEnergiyaKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="24) Qishloq xo'jaligini mexanizatsiyalash kafedrasi",callback_data="qishloqKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="25) Geodeziya, kadastr va yerdan foydalanish",callback_data="geodeziyaKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="26) Neft va gazni qayta ishlash kafedrasi",callback_data="neftGazKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="27) Moliya kafedrasi",callback_data="moliyaKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="28) Oziq ovqat mahsulotlari kafedrasi",callback_data="oziqOvqatKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="29) Oliy matematika kafedrasi",callback_data="oliyMatemKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
+        ]
+        
+    ]
+)
+
+#--------------------------------Kafedra 1-------------------------------
+AxborotoKafedra = InlineKeyboardMarkup(
+    inline_keyboard=[        
+        
+
+        [
+            InlineKeyboardButton(text="<< Ortga",callback_data="kafedraUz"),
+        ],     
     ]
 )
 
@@ -106,34 +281,53 @@ bakalavrRu = InlineKeyboardMarkup(
 UzFakultetUz = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="Iqtisodiyot Fakulteti",callback_data="iqtisod"),                     
+            InlineKeyboardButton(text="1) Iqtisodiyot Fakulteti",callback_data="iqtisod"),                     
         ],  
         
         [       
-            InlineKeyboardButton(text="Neft va Gaz Fakulteti",callback_data="neft"),                        
+            InlineKeyboardButton(text="2) Neft va Gaz Fakulteti",callback_data="neft"),                        
         ], 
         
         [       
-            InlineKeyboardButton(text="Energetika Fakulteti",callback_data="energetika"),                        
+            InlineKeyboardButton(text="3) Energetika Fakulteti",callback_data="energetika"),                        
         ], 
         
         [       
-            InlineKeyboardButton(text="Sanoat texnologiyalari Fakulteti",callback_data="sanoat"),                       
+            InlineKeyboardButton(text="4) Sanoat texnologiyalari Fakulteti",callback_data="sanoat"),                       
         ], 
         
         [       
-            InlineKeyboardButton(text="Kasb hunar ta'limi Fakulteti",callback_data="kasbHunar"),                       
+            InlineKeyboardButton(text="5) Geologiya va konchilik",callback_data="geologiya"),                       
         ], 
         
         [       
-            InlineKeyboardButton(text="Muhandislik Fakulteti",callback_data="muhandislik"),                        
+            InlineKeyboardButton(text="6) Muhandislik texnikasi Fakulteti",callback_data="muhandislik"),                        
+        ],
+
+        [       
+            InlineKeyboardButton(text="7) Elektronika va avtomatika",callback_data="elektroAvto"),                        
+        ],
+
+        [       
+            InlineKeyboardButton(text="💰 Kontrakt va Stipendiya",callback_data="kontrakUz"),                        
         ],
         
         [
             InlineKeyboardButton(text="<< Ortga",callback_data="bakalavr"),
-            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),
+            
             
            
+        ],     
+    ]
+)
+
+#--------------------------------KATRAKT BUJJET-------------------------------
+KantrakBujetUz = InlineKeyboardMarkup(
+    inline_keyboard=[        
+        
+
+        [
+            InlineKeyboardButton(text="<< Ortga",callback_data="bakalavr"),
         ],     
     ]
 )
@@ -159,11 +353,15 @@ RuFakultetRu = InlineKeyboardMarkup(
         ], 
         
         [       
-            InlineKeyboardButton(text="Профессионально-техническое образование",callback_data="kasbHunar"),                       
+            InlineKeyboardButton(text="Геология ",callback_data="kasbHunar"),                       
         ], 
         
         [       
             InlineKeyboardButton(text="Инжиниринг",callback_data="muhandislik"),                        
+        ],
+
+        [       
+            InlineKeyboardButton(text="Elektronika va avtomatika",callback_data="elektoAvto"),                        
         ],
         
         [
@@ -179,18 +377,19 @@ RuFakultetRu = InlineKeyboardMarkup(
 UzIqtisodUz = InlineKeyboardMarkup(
     inline_keyboard=[        
         [
-            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
-            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),     
+            InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanUzIqtisod"),  
+            
+            
         ],
 
          [
-            InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanUzUqtisod"),     
+            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
         ],     
     ]
 )
 
 #--------------------------------IQTISODIYOT FAKULTETI DEKANATI BO'LIMI (DEKANGA MUROJAAT)-------------------------------
-UzIqtisodDekanat = InlineKeyboardMarkup(
+IqtisodDekanat = InlineKeyboardMarkup(
     inline_keyboard=[
         [
             InlineKeyboardButton(text="📝Dekanatga murojaat",callback_data="UzIqtisodDekanat"),     
@@ -200,16 +399,19 @@ UzIqtisodDekanat = InlineKeyboardMarkup(
         ],  
     ]
 )
+
+
 #--------------------------------Neft Gaz FAKULTETI YO'NALISHLARI BO'LIMI (Konchilik, gaz quduq...)-------------------------------
 NeftGazUz = InlineKeyboardMarkup(
     inline_keyboard=[        
         [
-            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
-            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),     
+            InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanNeftUz"),   
+            
+         
         ],
 
          [
-            InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanNeftUz"),     
+            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
         ],     
     ]
 )
@@ -226,3 +428,143 @@ UzNeftGazDekanat = InlineKeyboardMarkup(
     ]
 )
 
+
+#--------------------------------Energetika FAKULTETI YO'NALISHLARI BO'LIMI (Konchilik, gaz quduq...)-------------------------------
+EnergiyaUz = InlineKeyboardMarkup(
+    inline_keyboard=[        
+        [
+            InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanEnergiyaUz"),   
+            
+            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),     
+        ],
+
+         [
+            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
+        ],     
+    ]
+)
+
+
+#--------------------------------Energetika FAKULTETI DEKANATI BO'LIMI (DEKANGA MUROJAAT)-------------------------------
+UzEnergiyaDekanat = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="📝Dekanatga murojaat",callback_data="UzEnergiyaDekanat"),     
+        ],   
+        [
+            InlineKeyboardButton(text="<< Ortga ",callback_data="energetika"),     
+        ],  
+    ]
+)
+
+
+#--------------------------------Sanoat FAKULTETI YO'NALISHLARI BO'LIMI -------------------------------
+SanoatUz = InlineKeyboardMarkup(
+    inline_keyboard=[        
+        [
+            InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanSanoatUz"),   
+            
+            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),     
+        ],
+
+         [
+            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
+        ],     
+    ]
+)
+
+
+#--------------------------------Energetika FAKULTETI DEKANATI BO'LIMI (DEKANGA MUROJAAT)-------------------------------
+UzSanoatDekanat = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="📝Dekanatga murojaat",callback_data="UzSanoatDekanat"),     
+        ],   
+        [
+            InlineKeyboardButton(text="<< Ortga ",callback_data="sanoat"),     
+        ],  
+    ]
+)
+
+
+#--------------------------------Geologiya va konchilik FAKULTETI YO'NALISHLARI BO'LIMI-------------------------------
+GeologiyaUz = InlineKeyboardMarkup(
+    inline_keyboard=[        
+        [
+            InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanGeologiyaUz"),   
+            
+            
+        ],
+
+         [
+            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
+        ],     
+    ]
+)
+
+
+#--------------------------------Geologiya FAKULTETI DEKANATI BO'LIMI (DEKANGA MUROJAAT)-------------------------------
+UzGeologiyaDekanat = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="📝Dekanatga murojaat",callback_data="UzGeologiyaDekanat"),     
+        ],   
+        [
+            InlineKeyboardButton(text="<< Ortga ",callback_data="sanoat"),     
+        ],  
+    ]
+)
+
+#--------------------------------Muhandislik FAKULTETI YO'NALISHLARI BO'LIMI-------------------------------
+Muhandislikuz = InlineKeyboardMarkup(
+    inline_keyboard=[        
+        [
+            InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanMuhandislikUz"),   
+            
+            
+        ],
+
+         [
+            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
+        ],     
+    ]
+)
+
+#--------------------------------Muhandislik DEKANATI BO'LIMI (DEKANGA MUROJAAT)-------------------------------
+UzMuhandisDekanat = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="📝Dekanatga murojaat",callback_data="UzMuhandisDekanat"),     
+        ],   
+        [
+            InlineKeyboardButton(text="<< Ortga ",callback_data="muhandis"),     
+        ],  
+    ]
+)
+
+#--------------------------------Elektronika va Avtomatika FAKULTETI YO'NALISHLARI BO'LIMI-------------------------------
+ElektroAvtoUz = InlineKeyboardMarkup(
+    inline_keyboard=[        
+        [
+            InlineKeyboardButton(text="🏢Dekanat",callback_data="ElektroavtoDekanat"),   
+            
+           
+        ],
+
+         [
+            InlineKeyboardButton(text="<< Ortga",callback_data="uzfak"),
+        ],     
+    ]
+)
+
+#--------------------------------Elektronika DEKANATI BO'LIMI (DEKANGA MUROJAAT)-------------------------------
+UzElektroAvtoDekanat = InlineKeyboardMarkup(
+    inline_keyboard=[
+        [
+            InlineKeyboardButton(text="📝Dekanatga murojaat",callback_data="UzElektroavtoDekanat"),     
+        ],   
+        [
+            InlineKeyboardButton(text="<< Ortga ",callback_data="elektroAvto"),     
+        ],  
+    ]
+)
