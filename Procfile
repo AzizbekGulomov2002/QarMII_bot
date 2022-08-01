@@ -1,2 +1,2 @@
-.idea/
-env/
+
+worker python main.py
