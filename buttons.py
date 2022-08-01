@@ -39,7 +39,7 @@ uzHeader = InlineKeyboardMarkup(
 YangiliklarUz = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
+            InlineKeyboardButton(text="<< Ortga",callback_data="kafedraUz"),
         ]
         
     ]
@@ -112,26 +112,15 @@ ruHeader = InlineKeyboardMarkup(
 bakalavrUz = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="🇺🇿 O'zbek fakultetlari",callback_data="uzfak"),     
-        ],
-        
+            InlineKeyboardButton(text="🇺🇿 O'zbek fakultetlari",callback_data="uzfak"),
+            InlineKeyboardButton(text="🇷🇺 Rus fakultetlari",callback_data="rusfak"),     
+        ],     
         [      
-            InlineKeyboardButton(text="🇷🇺 Rus fakultetlari",callback_data="rusfak"),       
+            InlineKeyboardButton(text="🇧🇾 Belarus fakultetlari",callback_data="belfak"), 
+            InlineKeyboardButton(text="⛪️ Kafedralar",callback_data="kafedraUz"),  
         ],
-        
-        [      
-            InlineKeyboardButton(text="🇧🇾 Belarus fakultetlari",callback_data="belfak"),   
-        ],
-
-        [      
-            InlineKeyboardButton(text="⛪️ Kafedralar",callback_data="kafedraUz"),   
-        ],
-        
         [
             InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
-            
-            
-           
         ],
        
     ]
@@ -142,106 +131,72 @@ bakalavrUz = InlineKeyboardMarkup(
 KafedraUz = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="1) Axborot texnologiyalari kafedrasi",callback_data="axborotKafedra"),
+            InlineKeyboardButton(text="1) Axborot texnologiyalari",callback_data="axborotKafedra"),
+            InlineKeyboardButton(text="2) Neft va Gaz ishi",callback_data="neftGazKafedra"),
         ],
         [
-            InlineKeyboardButton(text="2) Neft va Gaz ishi kafedrasi",callback_data="neftGazKafedra"),
+            InlineKeyboardButton(text="3)Texnologik mashina va jihozlash",callback_data="texnoJihozKafedra"),
+            InlineKeyboardButton(text="4) Gidravlika va gidro inshootlar",callback_data="gidroInshootKafedra"),
         ],
         [
-            InlineKeyboardButton(text="3)Texnologik mashina va jihozlash kafedra",callback_data="texnoJihozKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="4) Gidravlika va gidro inshootlar kafedrasi",callback_data="gidroInshootKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="5) Transport vositalari kafedrasi",callback_data="transportKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="6) Umumtexnika fanlar kafedrasi",callback_data="umumtexnikaKafedra"),
+            InlineKeyboardButton(text="5) Transport vositalari",callback_data="transportKafedra"),
+            InlineKeyboardButton(text="6) Umumtexnika fanlar",callback_data="umumtexnikaKafedra"),
         ],
         [
             InlineKeyboardButton(text="7) Foydali qazilmalar geologiyasi va razvetkasi",callback_data="foydaliKonKafedra"),
-        ],
-
-        [
-            InlineKeyboardButton(text="8) Konchilik ishi kafedrasi",callback_data="konchilikKafedra"),
+            InlineKeyboardButton(text="8) Konchilik ishi",callback_data="konchilikKafedra"),
         ],
 
         [
             InlineKeyboardButton(text="9) Ekologiya va mehnat muhofazasi",callback_data="ekologiyaKafedra"),
+            InlineKeyboardButton(text="10) Kimyoviy texnologiyalar",callback_data="kimyoTexKafedra"),
         ],
-
-        [
-            InlineKeyboardButton(text="10) Kimyoviy texnologiyalar kafedrasi",callback_data="kimyoTexKafedra"),
-        ],
-
         [
             InlineKeyboardButton(text="11) Qishloq xo'jaligi mahsulotlarini saqlash",callback_data="qishloqSaqlashKafedra"),
+            InlineKeyboardButton(text="12) Issiqlik energetikasi",callback_data="issiqlikKafedra"),
         ],
 
         [
-            InlineKeyboardButton(text="12) Issiqlik energetikasi kafedrasi",callback_data="issiqlikKafedra"),
-        ],
-
-        [
-            InlineKeyboardButton(text="13) Elektr energetikasi kafedrasi",callback_data="issiqlikKafedra"),
-        ],
-
-        [
+            InlineKeyboardButton(text="13) Elektr energetikasi",callback_data="issiqlikKafedra"),
             InlineKeyboardButton(text="14) Fizika va elektronika",callback_data="fizikaElektrKafedra"),
         ],
-
         [
-            InlineKeyboardButton(text="15) Innovatsion iqtisodiyot kafedrasi",callback_data="innoIqtisodKafedra"),
-        ],
-
-        [
+            InlineKeyboardButton(text="15) Innovatsion iqtisodiyot",callback_data="innoIqtisodKafedra"),
             InlineKeyboardButton(text="16) Buxgalteriya hisobi va audit",callback_data="buxAuditKafedra"),
         ],
 
         [
             InlineKeyboardButton(text="17) Biznes va innovatsion menejment",callback_data="biznesKafedra"),
+            InlineKeyboardButton(text="18) O'zbekiston tarixi",callback_data="uzTarixKafedra"),
         ],
         [
-            InlineKeyboardButton(text="18) O'zbekiston tarixi kafedrasi",callback_data="uzTarixKafedra"),
+            InlineKeyboardButton(text="19) Ijtimoiy fanlar",callback_data="ijtimoiyKafedra"),
+            InlineKeyboardButton(text="20) O'zbek va rus tillari",callback_data="uzbRusKafedra"),
         ],
         [
-            InlineKeyboardButton(text="19) Ijtimoiy fanlar kafedrasi",callback_data="ijtimoiyKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="20) O'zbek va rus tillari kafedrasi",callback_data="uzbRusKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="21) Xorijiy tillar kafedrasi",callback_data="xorijiyKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="22) Jismoniy tillar kafedrasi",callback_data="jismoniyKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="23) Muqobil energiya manbaalari kafedrasi",callback_data="muqobilEnergiyaKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="24) Qishloq xo'jaligini mexanizatsiyalash kafedrasi",callback_data="qishloqKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="25) Geodeziya, kadastr va yerdan foydalanish",callback_data="geodeziyaKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="26) Neft va gazni qayta ishlash kafedrasi",callback_data="neftGazKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="27) Moliya kafedrasi",callback_data="moliyaKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="28) Oziq ovqat mahsulotlari kafedrasi",callback_data="oziqOvqatKafedra"),
-        ],
-        [
-            InlineKeyboardButton(text="29) Oliy matematika kafedrasi",callback_data="oliyMatemKafedra"),
+            InlineKeyboardButton(text="21) Xorijiy tillar ",callback_data="xorijiyKafedra"),
+            InlineKeyboardButton(text="22) Jismoniy tillar ",callback_data="jismoniyKafedra"),
         ],
 
         [
-            InlineKeyboardButton(text="<< Ortga",callback_data="<<UzFak"),
-        ]
+            InlineKeyboardButton(text="23) Muqobil energiya manbaalari ",callback_data="muqobilEnergiyaKafedra"),
+            InlineKeyboardButton(text="24) Qishloq xo'jaligini mexanizatsiyalash",callback_data="qishloqKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="25) Geodeziya, kadastr va yerdan foydalanish",callback_data="geodeziyaKafedra"),
+            InlineKeyboardButton(text="26) Neft va gazni qayta ishlash",callback_data="neftGazKafedra"),
+        ],
+        [
+            InlineKeyboardButton(text="27) Moliya",callback_data="moliyaKafedra"),
+            InlineKeyboardButton(text="28) Oziq ovqat mahsulotlari",callback_data="oziqOvqatKafedra"),
+        ],
+
+        [
+            InlineKeyboardButton(text="29) Oliy matematika",callback_data="oliyMatemKafedra"),
+            InlineKeyboardButton(text="<< Ortga",callback_data="bakalavr"),
+        ],
+
+
         
     ]
 )
@@ -281,41 +236,27 @@ bakalavrRu = InlineKeyboardMarkup(
 UzFakultetUz = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton(text="1) Iqtisodiyot Fakulteti",callback_data="iqtisod"),                     
+            InlineKeyboardButton(text="1) Iqtisodiyot",callback_data="iqtisod"),
+            InlineKeyboardButton(text="2) Neft va Gaz",callback_data="neft"),                      
         ],  
         
-        [       
-            InlineKeyboardButton(text="2) Neft va Gaz Fakulteti",callback_data="neft"),                        
-        ], 
+       
         
         [       
-            InlineKeyboardButton(text="3) Energetika Fakulteti",callback_data="energetika"),                        
-        ], 
-        
+            InlineKeyboardButton(text="3) Energetika",callback_data="energetika"), 
+            InlineKeyboardButton(text="4) Sanoat texnologiyalari",callback_data="sanoat"),                        
+        ],      
         [       
-            InlineKeyboardButton(text="4) Sanoat texnologiyalari Fakulteti",callback_data="sanoat"),                       
+            InlineKeyboardButton(text="5) Geologiya va konchilik",callback_data="geologiya"),   
+            InlineKeyboardButton(text="6) Muhandislik texnikasi",callback_data="muhandislik"),                    
         ], 
-        
-        [       
-            InlineKeyboardButton(text="5) Geologiya va konchilik",callback_data="geologiya"),                       
-        ], 
-        
-        [       
-            InlineKeyboardButton(text="6) Muhandislik texnikasi Fakulteti",callback_data="muhandislik"),                        
-        ],
 
         [       
-            InlineKeyboardButton(text="7) Elektronika va avtomatika",callback_data="elektroAvto"),                        
-        ],
-
-        [       
+            InlineKeyboardButton(text="7) Elektronika va avtomatika",callback_data="elektroAvto"),  
             InlineKeyboardButton(text="💰 Kontrakt va Stipendiya",callback_data="kontrakUz"),                        
-        ],
-        
+        ],      
         [
-            InlineKeyboardButton(text="<< Ortga",callback_data="bakalavr"),
-            
-            
+            InlineKeyboardButton(text="<< Ortga",callback_data="bakalavr"),         
            
         ],     
     ]

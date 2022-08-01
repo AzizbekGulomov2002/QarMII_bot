@@ -264,19 +264,230 @@ async def statistikaUz(call:CallbackQuery):
     await call.message.delete()
     await call.message.answer(parse_mode="HTML",text="⚫️ <b>IT inkubatsiya markazida yangi Informatsion kurslar tashkil etilmoqda !</b> ", reply_markup=YangiliklarUz)
 
-#--------------------------------------------Axborot texnologiyalari kafedrasiKURSLAR---------------------
+#--------------------------------------------Axborot texnologiyalari kafedrasi---------------------
 
 @dp.callback_query_handler(text="axborotKafedra")    
 async def axborotKafedra(call:CallbackQuery):
     await call.message.delete()
-    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Kafedra mudiri: \n \n Suropov Baxodir Maydonovich \n Bog'lanish: +998973824888 </b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n 1)Suropov Baxodir Maydonovich- PhD. Dotsent \n 2) Panjiyev Samijon Aliqulovich – Katta о‘qituvchi \n 3)........", reply_markup=YangiliklarUz)
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Kafedra mudiri: \n \n Suropov Baxodir Maydonovich \n Bog'lanish: +998973824888 </b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n 1)Suropov Baxodir Maydonovich- PhD. Dotsent \n 2) Panjiyev Samijon Aliqulovich – Katta о‘qituvchi \n 3)Boypolvonov Barot Djonqobulovich – Katta о‘qituvchi \n 4)Axmedova Barno Abdiyevna – Katta о‘qituvchi \n 5)Rajabov Jamshid Nasrillayevich – Katta о‘qituvchi \n 6)Jamalova Gulchexra Babakulovna – Assistent \n 7)Qahramonova Xumora Qahramonovna – Katta о‘qituvchi \n 8)Hamrayev Nodir Zokir о‘g‘li – Katta о‘qituvchi \n  9)Ergashev Nuriddin G‘ayratovich – Katta о‘qituvchi \n 10)Eshmurodov Azamat G‘uzorovich – Katta о‘qituvchi \n 11)Xoliqulov Bekzod Jovliyevich - Katta о‘qituvchi  \n 12)Shaynazarov Ravshan Mamayusubovich – Assistent \n 13)Ishqobilov Farrux Xayrilloyevich – Assistent \n 14)Tursunov Mirolim Ahmadovich – Assistent \n 15)Shukurov Akmal Uktamovich– Assistent \n 16)Zaripova Shaxlo Olimovna-Stajyor-o’qituvchi  \n 17)Xoliyorova Hilola Komil qizi- Stajyor- o’qituvchi", reply_markup=YangiliklarUz)
 
-#--------------------------------------------Neft va Gaz kafedrasi---------------------
+#--------------------------------------------Neft va Gaz ishi kafedrasi---------------------
 
 @dp.callback_query_handler(text="neftGazKafedra")    
 async def neftGazKafedra(call:CallbackQuery):
     await call.message.delete()
-    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Neft va Gaz Kafedra mudiri: \n \n Suropov Baxodir Maydonovich \n Bog'lanish: +998973824888 </b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n 1)Suropov Baxodir Maydonovich- PhD. Dotsent \n 2) Panjiyev Samijon Aliqulovich – Katta о‘qituvchi \n 3)........", reply_markup=YangiliklarUz)
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Neft va Gaz Kafedra mudiri: \n \n Sattorov Laziz Xolmurodovich \n Bog'lanish: +998752271054 </b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n fan doktorlari - 2 \n fan nomzodlari - 3 \n katta o‘qituvchilar - 12 \n assistentlar - 16 \n stajerlar - 3 \n\n", reply_markup=YangiliklarUz)
+
+#--------------------------------------------TMJ kafedrasi----------------------------------
+
+@dp.callback_query_handler(text="texnoJihozKafedra")    
+async def texnoJihozKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Texnologik mashina va jihozlash kafedra mudiri: \n \n Sunnatov Zafar Ubaydullayevich \n Bog'lanish: +998 99 945 98 12 </b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n   professor - 1 \n dotsent, texnika fanlari nomzodi - 3 \n katta o‘qituvchi - 6 \n assistentlar - 8 \n \n ", reply_markup=YangiliklarUz)
+
+#--------------------------------------------TJA kafedrasi---------------------
+
+@dp.callback_query_handler(text="tjaavtomatikaKafedra")    
+async def tjaavtomatikaKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Texnologik jarayonlar va avtomatlashtirish va boshqarish kafedra mudiri: \n \n Jurayev Aburayhon Xoliqulovich \n Bog'lanish: +998 90 607 34 84  </b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n iqtisod fanlari doktori - 1 \n  texnika fanlari nomzodi - 1 \n iqtisod fanlari nomzodi - 1 \n \n ", reply_markup=YangiliklarUz)
+
+#--------------------------------------------Gidro inshootlar kafedrasi---------------------
+
+@dp.callback_query_handler(text="gidroInshootKafedra")    
+async def gidroInshootKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Gidravlika va gidro inshootlar kafedra mudiri: \n \n Eshev Sobir Samatovich \n Bog'lanish: +998972000577 </b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n professor - 3\n fan nomzodi, dotsentlar - 3 \n katta o‘qituvchi - 3 \n assistent - 7 \n stajyor - 1 ", reply_markup=YangiliklarUz)
+
+#--------------------------------------------Transport vositalari muhandisligi kafedrasi---------------------
+
+@dp.callback_query_handler(text="transportKafedra")    
+async def transportKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>  Transport vositalari kafedra mudiri: \n \n Abduraxmonov O‘rol Nurmatovich \n Bog'lanish:   +998972290059</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+#--------------------------------------------Umumtexnika fanlar kafedrasi---------------------
+
+@dp.callback_query_handler(text="umumtexnikaKafedra")    
+async def umumtexnikaKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Umumtexnika fanlar kafedra mudiri: \n \nIsmailov Ibrat Ilxomovich \n Bog'lanish:    +998939370033</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+#-------------------------------------------- Foydali qazilmalar geologiyasi va razvetkasi kafedrasi---------------------
+
+@dp.callback_query_handler(text="foydaliKonKafedra")    
+async def foydaliKonKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>  Foydali qazilmalar geologiyasi va razvetkasi kafedra mudiri: \n \nTurdiyev Shahboz Shermamat o‘g‘li \n Bog'lanish:  +998912155151</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#-------------------------------------------- Konchilik ishi kafedrasi---------------------
+
+@dp.callback_query_handler(text="konchilikKafedra")    
+async def konchilikKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>  Konchilik ishi kafedrasi mudiri: \n \nShodiyev Abbos Ne’mat o‘g‘li \n Bog'lanish:  +998 90 722 66 88</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  Ekologiya va mehnat muhofazasi kafedrasi---------------------
+
+@dp.callback_query_handler(text="ekologiyaKafedra")    
+async def ekologiyaKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>   Ekologiya va mehnat muhofazasi kafedrasi mudiri: \n \nEshonqulov Ravshan Abdurazaqovich \n Bog'lanish:  +99890 729 0370</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  Kimyoviy texnologiyalar  kafedrasi---------------------
+
+@dp.callback_query_handler(text="kimyoTexKafedra")    
+async def kimyoTexKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>  Kimyoviy texnologiyalar  kafedrasi mudiri: \n \nRosilov Mansur Sirgiyevich \n Bog'lanish:   +998972220771</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#-------------------------------------------- Qishloq xo'jaligi mahsulotlarini saqlash kafedrasi---------------------
+
+@dp.callback_query_handler(text="qishloqSaqlashKafedra")    
+async def qishloqSaqlashKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Qishloq xo'jaligi mahsulotlarini saqlash kafedrasi mudiri: \n \nHakimova Muabara Xalilovna \n Bog'lanish:    +998998571727</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#-------------------------------------------- Issiqlik energetikasi kafedrasi---------------------
+
+@dp.callback_query_handler(text="issiqlikKafedra")    
+async def issiqlikKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>Issiqlik energetikasi kafedrasi kafedrasi mudiri: \n \nFayziev To‘lqin Amirovich \n Bog'lanish:   +998912628488</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#-------------------------------------------- Elektr energetikasi kafedrasi---------------------
+
+@dp.callback_query_handler(text="elektrKafedra")    
+async def elektrKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>Elektr energetikasi kafedrasi mudiri: \n \nFayziyev Maxmanazar Mansurovich \n Bog'lanish:  +99890 673-97-64</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#-------------------------------------------- Fizika va elektronika kafedrasi---------------------
+
+@dp.callback_query_handler(text="fizikaElektrKafedra")    
+async def fizikaElektrKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>Fizika va elektronika kafedrasi mudiri: \n \nAliqulov Muysin Nortoshevich \n Bog'lanish:   +998 939356181</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#-------------------------------------------- Innovatsion iqtisodiyot kafedrasi---------------------
+
+@dp.callback_query_handler(text="innoIqtisodKafedra")    
+async def innoIqtisodKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>Innovatsion iqtisodiyot kafedrasi mudiri: \n \nHamrayeva Sayyora Nasimovna \n Bog'lanish: +998904275580</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  Buxgalteriya hisobi va audit kafedrasi---------------------
+
+@dp.callback_query_handler(text="buxAuditKafedra")    
+async def buxAuditKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Buxgalteriya hisobi va audit kafedrasi mudiri: \n \nAlikulov Azamat Tuygunovich\n Bog'lanish:  +998996696673</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  Biznes va innovatsion menejment kafedrasi---------------------
+
+@dp.callback_query_handler(text="biznesKafedra")    
+async def biznesKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Biznes va innovatsion menejment kafedrasi mudiri: \n \nRaximov Anvar Norimovich\n Bog'lanish: +998914536377</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  O'zbekiston tarixi kafedrasi---------------------
+
+@dp.callback_query_handler(text="uzTarixKafedra")    
+async def uzTarixKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> O'zbekiston tarixi kafedrasi mudiri: \n \nErgasheva Yulduz Alimovna\n Bog'lanish: +998906170012</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------   Ijtimoiy fanlar kafedrasi---------------------
+
+@dp.callback_query_handler(text="ijtimoiyKafedra")    
+async def ijtimoiyKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Ijtimoiy fanlar kafedrasi mudiri: \n \nAxmedov Bekzod Abdiraxmonovich\n Bog'lanish: +998912177503</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------    O'zbek va rus tillari kafedrasi---------------------
+
+@dp.callback_query_handler(text="uzbRusKafedra")    
+async def uzbRusKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> O'zbek va rus tillari kafedrasi mudiri: \n \nBegimov Odil To‘xtamishovich\n Bog'lanish: +998939088835</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------     Xorijiy tillar kafedrasi---------------------
+
+@dp.callback_query_handler(text="xorijiyKafedra")    
+async def xorijiyKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Xorijiy tillar kafedrasi mudiri: \n \nXoliyorov Bunyod Husanovich\n Bog'lanish: +998945263885</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  Jismoniy tarbiya kafedrasi---------------------
+
+@dp.callback_query_handler(text="jismoniyKafedra")    
+async def jismoniyKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Jismoniy tarbiya  kafedrasi mudiri: \n \nArislonov Ilhom Toshtemirovich\n Bog'lanish: +998907164020</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  Muqobil energiya manbaalari kafedrasi---------------------
+
+@dp.callback_query_handler(text="muqobilEnergiyaKafedra")    
+async def muqobilEnergiyaKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Muqobil energiya manbaalari kafedrasi mudiri: \n \nDavlonov Xayrulla Allamurotovich\n Bog'lanish: +998904416980</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  Qishloq xo'jaligini mexanizatsiyalash kafedrasi---------------------
+
+@dp.callback_query_handler(text="qishloqKafedra")    
+async def qishloqKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Qishloq xo'jaligini mexanizatsiyalash kafedrasi mudiri: \n \nBatirov Zafar Lutfullayevich\n Bog'lanish: +998914648622</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------Geodeziya, kadastr va yerdan foydalanish kafedrasi---------------------
+
+@dp.callback_query_handler(text="geodeziyaKafedra")    
+async def geodeziyaKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>Geodeziya, kadastr va yerdan foydalanish kafedrasi mudiri: \n \nAliqulov G‘olib Nortoshevich\n Bog'lanish: +998936972019</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#-------------------------------------------- Neft va gazni qayta ishlash kafedrasi---------------------
+
+@dp.callback_query_handler(text="neftgazKafedra")    
+async def neftgazKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b> Neft va gazni qayta ishlash kafedrasi mudiri: \n \nDustqobilov Eldor Nurmamatovich\n Bog'lanish: +99893-902-12-32</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#--------------------------------------------  Oziq ovqat mahsulotlari kafedrasi---------------------
+
+@dp.callback_query_handler(text="oziqOvqatKafedra")    
+async def oziqOvqatKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>  Oziq ovqat mahsulotlari kafedrasi mudiri: \n \nBoqiyev Gulomjon Ochilovich\n Bog'lanish: +99897 222 55 27</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
+
+#-------------------------------------------- Oliy matematika kafedrasi---------------------
+
+@dp.callback_query_handler(text="oliyMatemKafedra")    
+async def oliyMatemKafedra(call:CallbackQuery):
+    await call.message.delete()
+    await call.message.answer(parse_mode="HTML",text="⚫️ <b>Oliy matematika kafedrasi mudiri: \n \nEshmatov Bahodir Eliyevich\n Bog'lanish: +998 91 643 40 53</b> \n  Qabul kunlari: Dushanba-Juma (14:00-17:00) \n Kafedrada faoliyat yuritayotgan professor-о‘qituvchilar  rо‘yxati : \n \n \n \n ", reply_markup=YangiliklarUz)
+
 
 if __name__ == '__main__':
     executor.start_polling(dp, skip_updates=True)
