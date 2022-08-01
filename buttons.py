@@ -376,7 +376,7 @@ EnergiyaUz = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanEnergiyaUz"),   
             
-            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),     
+            
         ],
 
          [
@@ -405,7 +405,7 @@ SanoatUz = InlineKeyboardMarkup(
         [
             InlineKeyboardButton(text="🏢Dekanat",callback_data="DekanSanoatUz"),   
             
-            InlineKeyboardButton(text="⚙️ Tilni o'zgartirish",callback_data="til"),     
+           
         ],
 
          [
