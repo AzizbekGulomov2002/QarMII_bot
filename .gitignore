@@ -1,3 +1,5 @@
 .idea/
 .env/
 .env
+
+worker: python main.py
