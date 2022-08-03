@@ -11,7 +11,7 @@ from buttons import *
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import CallbackQuery
 
-
+from app.models import Murojaat, User
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
@@ -23,6 +23,14 @@ dp = Dispatcher(bot)
 #---------------------start tugmasi-----------------------------------
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):   
+    user=User.objects.all()
+    a = False
+    for i in user:
+        if message.chat.id == i.username:
+            a = True
+    if a == True:
+        User.objects.create(username = message.chat.id)
+        
     await message.answer(parse_mode='HTML',text=f"Assalomu alaykum hurmatli <b>{message.chat.username}</b> ! \n <b>Qarshi muhandislik iqtisodiyot instituti</b> rasmiy botiga hush kelibsiz", reply_markup=uzHeader)
 
 
@@ -90,16 +98,21 @@ async def iqtisod(call:CallbackQuery):
 #----------------------------------------------------------------IQTISODIYOT FAKULTETI DEKANATI  UZB-----------------------------------------  
 
 
-#-----------------------------------IQTISODIYOT FAKULTETI DEKANATIGA MUROJAAT-----------
+#-----------------------------------IQTISODIYOT DEKANATIGA MUROJAAT-----------
 @dp.callback_query_handler(text='UzIqtisodDekanat')
-async def UzIqtisodDekanat(call:CallbackQuery):
+async def UzIqtisodDekanat(call:CallbackQuery, message:types.Message):
+    
+    Murojaat.objects.create(qayerga=message.text, username=message.chat.id)
     await call.message.delete()
     await call.message.answer(text="Iqtisodiyot dekanatiga murojaat : .... \n Namunadagi kabi yo'llang !")
+    
 @dp.message_handler()
 async def echo(message: types.Message):
-    # old style:
-    # await bot.send_message(message.chat.id, message.text)
-
+    
+    
+    murojaat = Murojaat.objects.filter(username = message.chat.id).last()
+    murojaat.matni=message.text
+    murojaat.save()
     await message.answer(message.text)
     
 
