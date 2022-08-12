@@ -11,7 +11,8 @@ from buttons import *
 from aiogram import Bot, Dispatcher, executor, types
 from aiogram.types import CallbackQuery
 
-from app.models import Murojaat, User
+# from app.models import Murojaat, Foydalanuvchi
+
 # Configure logging
 logging.basicConfig(level=logging.INFO)
 
@@ -23,13 +24,13 @@ dp = Dispatcher(bot)
 #---------------------start tugmasi-----------------------------------
 @dp.message_handler(commands=['start'])
 async def send_welcome(message: types.Message):   
-    user=User.objects.all()
-    a = False
-    for i in user:
-        if message.chat.id == i.username:
-            a = True
-    if a == True:
-        User.objects.create(username = message.chat.id)
+    # user=Foydalanuvchi.objects.all()
+    # a = False
+    # for i in user:
+    #     if message.chat.id == i.username:
+    #         a = True
+    # if a == True:
+    #     Foydalanuvchi.objects.create(username = message.chat.id)
         
     await message.answer(parse_mode='HTML',text=f"Assalomu alaykum hurmatli <b>{message.chat.username}</b> ! \n <b>Qarshi muhandislik iqtisodiyot instituti</b> rasmiy botiga hush kelibsiz", reply_markup=uzHeader)
 
